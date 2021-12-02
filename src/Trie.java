@@ -63,21 +63,7 @@ public class Trie {
         for (String word : wordList)
             root.insert(word, count, i++);
     }
-
-    public boolean find(String prefix, boolean match) { //check for prefix match
-        Node finalN = root;
-        for (char ch : prefix.toCharArray()) {
-            finalN = finalN.nodes.get(ch);
-            if (finalN == null)
-                return false;
-        }
-        return !match || finalN.valid;
-    }
-
-    public boolean find(String prefix) { //retruns other find method
-        return find(prefix, false);
-    }
-
+    
     
     public List<List<String>> suggest(String token, int count) {
         List<List<String>> list = new ArrayList<>();
