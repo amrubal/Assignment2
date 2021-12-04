@@ -1,0 +1,5 @@
+What could possibly be done to improve correct spelling is run through token and the correct word it is being compared to
+and check each character for the best matched words. Since the spelling may be a little complicated in terms of where 
+exactly the issue is and how many misspelled instances there is, it could compare the values of how often it is used and then make the deduction there. 
+We could also use a hashtable to store most used words in order to be better at suggesting correct words. Possibly substituting the assumed wrong characters 
+in the word as we run through it in order to come to closest word possible in order to better improve results.
