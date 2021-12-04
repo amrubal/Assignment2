@@ -20,14 +20,13 @@ public class Spelling {
         for (int i = 0; i < wrongWord.size(); i++) {
             System.out.println("MISSPELLED: ");
             System.out.println(wrongWord.get(i));
-            System.out.println("**********************");
             System.out.println(trie.suggest(wrongWord.get(i).toLowerCase(), 3)); //prints out both 3
             System.out.println(trie.suggest(wrongWord.get(i).toLowerCase(), 7)); //and 7
             System.out.println();
         }
 
         System.out.println(token);
-        System.out.println("**********************");
+        
 
         return trie.suggest(token, count);
     }
